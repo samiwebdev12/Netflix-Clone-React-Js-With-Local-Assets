@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.netflix-number-stroke {
+  color: #000;
+  font-size: 6.5rem;
+  font-weight: 900;
+  line-height: 1;
+  -webkit-text-stroke: 2px #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 1920px) {
+  .netflix-number-stroke {
+    font-size: 7.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .netflix-number-stroke {
+    font-size: 8.5rem;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hero-glow-arc {
+  border-radius: 50% 50% 0 0;
+  border-top: 4px solid #e50914;
+  bottom: -55px;
+  box-shadow: 0 -18px 40px 0 rgba(229, 9, 20, 0.45),
+    0 26px 60px 0 rgba(37, 99, 235, 0.5);
+  height: 100px;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 140%;
+  z-index: 10;
+}
+
+.sign-in-page {
+  background-color: #000;
+  background-image: radial-gradient(
+    ellipse 90% 55% at 50% 0,
+    rgba(105, 12, 19, 0.58) 0,
+    rgba(35, 4, 7, 0.85) 45%,
+    #000 85%
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.netflix-input {
+  background-color: hsla(0, 0%, 7%, 0.75);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.netflix-input:focus,
+.netflix-input:focus-visible {
+  border-color: #fff !important;
+  box-shadow: 0 0 0 2px #fff !important;
+  outline: none !important;
+  outline-offset: 0 !important;
+  --tw-ring-color: transparent !important;
+  --tw-ring-offset-color: transparent !important;
+}
